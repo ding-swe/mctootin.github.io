@@ -70,55 +70,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Yelp Restaurant Recommender</h1>
-                        <script src="http://d3js.org/d3.v3.min.js">	</script>
-						<script src="http://d3js.org/topojson.v1.min.js"></script>
-						<!-- I recommend you host this file on your own, since this will change without warning -->
-						<script src="http://datamaps.github.io/scripts/datamaps.all.min.js?v=1"></script>
+                        	hello 1 
 						<div id="container1" style="position: relative; width: 80%; height:600px"></div>
+							hello 2 
 
-
-						<script>
-						//basic map config with custom fills, mercator projection
-						var map = new Datamap({
-						scope: 'usa',
-						element: document.getElementById('container1'),
-						fills: {
-							defaultFill: '#f6ebc0',
-							good: '55775c',
-							bad: 'aa180d'
-						},
-
-						data: {
-							NY: {fillKey: 'lt50' }
-						}
-							  });
-
-							  map.bubbles([
-							  {
-								name: 'test',
-								radius: 20,
-								fillKey: 'bad',
-								latitude: 40.639722,
-								longitude: -73.778889
-							  },
-							  {
-								name: 'good',
-								radius: 20,
-								fillKey: 'good',
-								latitude: 39.74,
-								longitude: -104.99
-							  },
-							  {
-								popupTemplate: function(data) {
-								  return '<div class="hoverinfo">Name:' + data.name 
-								}
-							  }]);
-							  /* // update info like this
-							  map.updateChoropleth({
-								NY: {fillKey: ''},
-							  });
-							  */
-							 </script>
+					
 						</div>
 					</div>
 				</div>
